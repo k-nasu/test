@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 <meta charset="UTF-8">
 <title>HelloServlet</title>
 </head>
@@ -24,5 +25,15 @@ POST通信
 <input type="submit" value="送信">
 </form>
 
+=======
+<meta charset=UTF-8">
+<title>HelloServlet</title>
+</head>
+<body>
+
+<input type="button" value="HelloServlet" onClick="location.href='HelloServlet'">
+<input type="button" value="WelcomeServlet" onClick="location.href='welcome.jsp'">
+<input type="button" value="問い合わせ" onClick="location.href='inquiry.jsp'">
+>>>>>>> 6acb13b7841f4847b066da2ef180e5b2569813ce
 </body>
 </html>

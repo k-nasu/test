@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 <meta charset="UTF-8">
 <title>お問い合わせフォーム</title>
 </head>
@@ -18,5 +19,23 @@
 	</textarea>
 	 <br><input type="submit" value="登録">
 	</form>
+=======
+<meta charset=UTF-8">
+<title>お問い合わせフォーム</title>
+</head>
+<body>
+ <form method="post" action="InquiryServlet">
+ 	名前:<br><input type="text" name="name"><br>
+ 	お問い合わせの種類:<br> <select name="qtype">
+ 		<option value="company">会社について</option>
+ 		<option value="company">製品について</option>
+ 		<option value="company">アフタサポートについて</option>
+ 		</select><br>お問い合わせ内容:<br>
+ 		<textarea name="body">
+ 	</textarea>
+ 	  <br><input type="submit" value="登録">
+ 		</form>
+
+>>>>>>> 6acb13b7841f4847b066da2ef180e5b2569813ce
 </body>
 </html>
