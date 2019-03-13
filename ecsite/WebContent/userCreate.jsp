@@ -71,9 +71,12 @@
 			<p>UserCreate</p>
 		</div>
 		<div>
-			<s:if test="errorMassage! = ''">
+
+		<s:if test="errorMessage!= ''">
 				<s:property value="errorMessage" escape="false" />
 			</s:if>
+
+
 			<table>
 			<s:form action="UserCreateConfirmAction">
 			<tr>
@@ -101,6 +104,10 @@
 				</td>
 			</tr>
 			<s:submit value="登録" />
+
+				<s:if test="errorMassage! = ''">
+				<s:property value="errorMessage" escape="false" />
+			</s:if>
 		</s:form>
 		</table>
 

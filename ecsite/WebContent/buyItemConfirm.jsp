@@ -16,7 +16,7 @@
 		<title>BuyItemConfirm画面</title>
 
 		<style type="text/css">
-
+		/* ========= TAG LAYOUT =========*/
 			body{
 			margin: 0;
 			padding: 0;
@@ -57,10 +57,10 @@
 
 </style>
 <script type="text/javascript">
-function submitAction(url) {
-$('form').attr('action', url);
-$('form').submit();
-}
+	function submitAction(url) {
+		$('form').attr('action', url);
+		$('form').submit();
+	}
 </script>
 
 </head>
@@ -96,10 +96,12 @@ $('form').submit();
 			<tr>
 				<td><br></td>
 			</tr>
-			<div>
-				<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
-				<p>マイぺージは<a href='<s:url action="MyPageAction" />'>こちら</a></p>
-			</div>
+			<tr>
+				<td><input type="button" value="戻る" onclick="submitAction('HomeAction')"/></td>
+				<td><input type="button" value="完了" onclick="submitAction('BuyItemConfirmAction')"></td>
+			</tr>
+		</s:form>
+
 		</div>
 	</div>
 	<div id="footer">
